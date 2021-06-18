@@ -7,6 +7,15 @@ body {
 .logo {
 	width: 40px;
 	height: 36.84px;
+	top: 1%;
+	position: fixed;
+	left: 12%;
+}
+
+.title {
+	position: absolute;
+	left: 15%;
+	display: flex;
 }
 
 .header-top {
@@ -26,6 +35,13 @@ body {
 
 .formulário {
 	position: absolute;
+	width: 27%;
+	margin-left: 11%;
+	margin-top: 1%;
+}
+
+.titulo-box {
+	text-align: center;
 }
 
 .text-center {
@@ -40,11 +56,13 @@ body {
 	display: flex;
 	list-style-type: none;
 	flex-direction: row;
-	position: relative;
+	position: fixed;
 	width: 350px;
 	height: 40px;
 	background-color: white;
 	color: #333;
+	top: -0.5%;
+	right: 11%;
 }
 
 .menu-responsivo ul li {
@@ -57,7 +75,6 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 	display: flex;
-	align-items: center;
 }
 
 .menu-hamburguer {
@@ -76,8 +93,9 @@ body {
 	border: 1px solid #979797;
 	box-sizing: border-box;
 	border-radius: 4px;
-	width: 370px;
+	width: 100%;
 	height: 32PX;
+	padding: 3%;
 }
 
 .container {
@@ -85,36 +103,51 @@ body {
 }
 
 .botão {
-	width: 370px;
+	width: 100%;
 	height: 32px;
 	border-radius: 4px;
 	background-color: #333;
 	color: #ffffff;
 	margin: 2% 0 0 0;
+	font-style: normal;
+}
+
+.border {
+	border-width: 100%;
+	border: 1px solid #979797;
+	padding: 3%;
 }
 
 .linha {
-	width: 52%;
+	display: contents;
 }
 
 .tabela {
 	float: right;
 	margin: 2%;
+	width: 50%;
+	margin-right: 11%;
 }
 
-.col-3{
+.col-3 {
 	text-align: right;
 }
+
 .linha-extrato {
 	width: 100%;
 	border: 1px;
 	color: #979797;
 }
 
-hr {
+.linha-dupla {
 	border-top: 4px double;
 	width: 100%;
-	border: 4px double solid #979797
+	border: 4px double solid #979797;
+}
+
+#lucro {
+	text-align: right;
+	font-size: 10px;
 }
 
 .mt-1 {
@@ -165,20 +198,40 @@ hr {
 	margin-bottom: 60px;
 }
 
-/* versão mobile */
-@media screen and (max-width:411px) {
-
+@media screen and (max-width:768px) {
 	.menu-responsivo {
+		position: static;
 		text-align: right;
 	}
 
 	.logo {
 		width: 30px;
 		height: 27.63px;
+		margin-top: 1%;
+		left: 5%;
+	}
+
+	.header-top ul {
+		background-color: #e0e0e0;
+		height: 60px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.title {
+		position: sticky;
 	}
 
 	.formulário {
 		position: static;
+		width: 90%;
+		margin: 5%;
+	}
+
+	.titulo-box {
+		display: none;
 	}
 
 	.menu-responsivo ul {
@@ -216,11 +269,12 @@ hr {
 		color: #333;
 		display: block;
 	}
-	
+
 	.menu-hamburguer {
 		display: block;
 		width: 100%;
 	}
+
 	.menu-hamburguer div {
 		width: 18PX;
 		height: 2px;
@@ -228,7 +282,6 @@ hr {
 		margin: 6px 0;
 		display: block;
 	}
-
 
 	.menu-responsivo:hover ul {
 		display: block;
@@ -250,6 +303,11 @@ hr {
 
 	.linha {
 		width: 100%;
+		display: block;
+	}
+
+	.border {
+		display: contents;
 	}
 
 	.tabela {
@@ -259,14 +317,208 @@ hr {
 		font-size: 16px;
 		line-height: 19px;
 		display: flex;
+		width: 100%;
 	}
 
 	.col-3 {
 		text-align: right;
 	}
 
-	.linha-extrato {
+	.col-1 {
+		width: 5%;
+	}
+
+	Ç .itens-menu:hover {
+		background-color: #c4c4c4;
+		color: #333;
+		display: block;
+	}
+
+	.menu-hamburguer {
+		display: block;
 		width: 100%;
+	}
+
+	.menu-hamburguer div {
+		width: 18PX;
+		height: 2px;
+		background-color: #333;
+		margin: 6px 0;
+		display: block;
+	}
+
+	.menu-responsivo:hover ul {
+		display: block;
+	}
+
+	.container {
+		margin: 6.5%;
+	}
+
+	.caixa-form {
+		width: 100%;
+	}
+
+	.botão {
+		margin: 20px 0 0 0;
+		width: 100%;
+		height: 30px;
+	}
+
+	.linha {
+		width: 100%;
+		display: block;
+	}
+
+	.border {
+		display: contents;
+	}
+
+	.tabela {
+		margin: -30px 0;
+		padding: 0 20px;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 19px;
+		display: flex;
+		width: 100%;
+	}
+
+	.col-3 {
+		text-align: right;
+	}
+
+	.col-1 {
+		width: 5%;
+	}
+}
+
+/* versão mobile */
+@media screen and (max-width:411px) {
+
+	.menu-responsivo {
+		position: static;
+		text-align: right;
+	}
+
+	.logo {
+		width: 30px;
+		height: 27.63px;
+		margin-top: 1%;
+		left: 5%;
+	}
+
+	.header-top ul {
+		background-color: #e0e0e0;
+		height: 60px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.title {
+		position: sticky;
+	}
+
+	.formulário {
+		position: static;
+		width: 90%;
+		margin: 5%;
+	}
+
+	.titulo-box {
+		display: none;
+	}
+
+	.menu-responsivo ul {
+		display: none;
+		list-style-type: none;
+		background-color: #333;
+		font-size: 16px;
+		color: white;
+		position: fixed;
+		height: 100%;
+		width: 85.4%;
+		right: 0px;
+		top: 0px;
+		margin: 0px;
+		padding: 20px 0px;
+	}
+
+	.menu-responsivo ul li {
+		border-left: 1px solid #333;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 19px;
+		align-items: center;
+		display: block;
+	}
+
+	#x-menu {
+		text-align: left;
+		display: block;
+	}
+
+	.itens-menu:hover {
+		background-color: #c4c4c4;
+		color: #333;
+		display: block;
+	}
+
+	.menu-hamburguer {
+		display: block;
+		width: 100%;
+	}
+
+	.menu-hamburguer div {
+		width: 18PX;
+		height: 2px;
+		background-color: #333;
+		margin: 6px 0;
+		display: block;
+	}
+
+	.menu-responsivo:hover ul {
+		display: block;
+	}
+
+	.container {
+		margin: 6.5%;
+	}
+
+	.caixa-form {
+		width: 100%;
+	}
+
+	.botão {
+		margin: 20px 0 0 0;
+		width: 100%;
+		height: 30px;
+	}
+
+	.linha {
+		width: 100%;
+		display: block;
+	}
+
+	.border {
+		display: contents;
+	}
+
+	.tabela {
+		margin: -30px 0;
+		padding: 0 20px;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 19px;
+		display: flex;
+		width: 100%;
+	}
+
+	.col-3 {
+		text-align: right;
 	}
 
 	.col-1 {

@@ -15,12 +15,16 @@
     </head>
 
     <body>
-        
+
         <div class="header-top">
-            <img class="logo" src="./logo.png">
-            <span>
-                Controle financeiro
-            </span>
+            <div>
+                <img class="logo" src="./logo.png">
+            </div>
+            <div class="title">
+                <span>
+                    Controle financeiro
+                </span>
+            </div>
             <div class="menu-responsivo">
                 <div class="menu-hamburguer">
                     <div></div>
@@ -34,23 +38,26 @@
                     <li class="itens-menu">Limpar dados</li>
                     <li class="itens-menu">Salvar no servidor</li>
                 </ul>
+
             </div>
+            
         </div>
 
         <div class="formulário">
-            <div class="container">
+            <div class="container border">
                 <form>
-                    <p label class="itens-form">Tipo de transação</p>
-                    <input class="caixa-form" placeholder="Transação" type="text" required>
-                    <p label class="itens-form">Nome da mercadoria</p>
-                    <input class="caixa-form" placeholder="Mercadoria" type="text" required>
-                    <p label class="itens-form">valor</p>
+                    <h1 class="titulo-box">Nova transação</h1>
+                    <p label>Tipo de transação</p>
+                    <input class="caixa-form" placeholder="Compra" type="text" required>
+                    <p label>Nome da mercadoria</p>
+                    <input class="caixa-form" placeholder="Input" type="text" required>
+                    <p label>valor</p>
                     <input class="caixa-form" placeholder="R$ 0,00" type="number" required>
                     <div class="mb-1">
                         <button class="botão ">Adicionar transação</button>
                     </div>
                 </form>
-                <img class="linha" src="./linha.png">
+                <hr class="linha">
             </div>
         </div>
 
@@ -58,9 +65,9 @@
             <table class="tabela">
                 <tr>
                     <td colspan="3"><br><strong>
-                    <h3 class="text-center">Extrato de transações</h3>
-                    </strong>
-                </td>
+                            <h3 class="text-center">Extrato de transações</h3>
+                        </strong>
+                    </td>
                 </tr>
                 <tr>
                     <td class="col-1">&nbsp;</td>
@@ -92,12 +99,19 @@
                     <td class="col-3">R$9,99</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><hr></td>
+                    <td colspan="3">
+                        <hr class="linha-dupla">
+                    </td>
                 </tr>
                 <tr>
                     <td class="col-1">&nbsp;</td>
                     <td class="col-2"><strong>Total</strong></td>
                     <td class="col-3"><strong>R$12.900</strong></td>
+                </tr>
+                <tr>
+                    <td class="col-1">&nbsp;</td>
+                    <td class="col-2">&nbsp;</td>
+                    <td id="lucro">[LUCRO]</td>
                 </tr>
             </table>
         </div>
