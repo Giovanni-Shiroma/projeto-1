@@ -1,120 +1,127 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-        <title>Projeto HTML</title>
+    <title>Projeto HTML</title>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="header-top">
-            <div>
-                <img class="logo" src="./logo.png">
-            </div>
-            <div class="title">
-                <span>
-                    Controle financeiro
-                </span>
-            </div>
-            <div class="menu-responsivo">
-                <div class="menu-hamburguer">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                <ul>
-                    <li id="x-menu">X</li>
-                    <li class="itens-menu">Cadastro de transações</li>
-                    <li class="itens-menu">Limpar dados</li>
-                    <li class="itens-menu">Salvar no servidor</li>
-                </ul>
-
-            </div>
-            
-        </div>
-
-        <div class="formulário">
-            <div class="container border">
-                <form>
-                    <h1 class="titulo-box">Nova transação</h1>
-                    <p label>Tipo de transação</p>
-                    <input class="caixa-form" placeholder="Compra" type="text" required>
-                    <p label>Nome da mercadoria</p>
-                    <input class="caixa-form" placeholder="Input" type="text" required>
-                    <p label>valor</p>
-                    <input class="caixa-form" placeholder="R$ 0,00" type="number" required>
-                    <div class="mb-1">
-                        <button class="botão ">Adicionar transação</button>
-                    </div>
-                </form>
-                <hr class="linha">
-            </div>
-        </div>
-
+    <div class="header-top">
         <div>
-            <table class="tabela">
-                <tr>
-                    <td colspan="3"><br><strong>
-                            <h3 class="text-center">Extrato de transações</h3>
-                        </strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-1">&nbsp;</td>
-                    <td class="col-2"><strong>Mercadoria</strong></td>
-                    <td class="text-right" class="col-3"><strong>Valor</strong></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
-                </tr>
-                <tr>
-                    <td class="col-1">+</td>
-                    <td class="col-2">Lorem ipsum dolor sit amet consectetur</td>
-                    <td class="col-3">R$12.999,99</td>
-                </tr>
-                <tr>
-                    <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
-                </tr>
-                <tr>
-                    <td class="col-1">-</td>
-                    <td class="col-2">Quis nostrud exercitation</td>
-                    <td class="col-3">R$99.99</td>
-                </tr>
-                <tr>
-                    <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
-                </tr>
-                <tr class="colunas">
-                    <td>+</td>
-                    <td class="col-2">Lorem ipsum</td>
-                    <td class="col-3">R$9,99</td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <hr class="linha-dupla">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-1">&nbsp;</td>
-                    <td class="col-2"><strong>Total</strong></td>
-                    <td class="col-3"><strong>R$12.900</strong></td>
-                </tr>
-                <tr>
-                    <td class="col-1">&nbsp;</td>
-                    <td class="col-2">&nbsp;</td>
-                    <td id="lucro">[LUCRO]</td>
-                </tr>
-            </table>
+            <img class="logo" src="./logo.png">
         </div>
-    </body>
+        <div class="title">
+            <span>
+                Controle financeiro
+            </span>
+        </div>
+        <div class="menu-responsivo">
+            <div class="menu-hamburguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <ul>
+                <li id="x-menu">X</li>
+                <li class="itens-menu">Cadastro de transações</li>
+                <li class="itens-menu">Limpar dados</li>
+                <li class="itens-menu">Salvar no servidor</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="formulário">
+        <div class="container border">
+            <form>
+                <h1 class="titulo-box">Nova transação</h1>
+                <p label>Tipo de transação</p>
+                <div class="form-tab">
+                    <input class="caixa-form caixa-form1" placeholder="Compra" type="text" required>
+
+                    <p label>Nome da mercadoria</p>
+                    <input class="caixa-form caixa-form2" placeholder="Input" type="text" required>
+
+                    <p label>valor</p>
+                    <input class="caixa-form caixa-form3" placeholder="R$ 0,00" type="number" required>
+
+                </div>
+                <div class="mb-1">
+                    <button class="botão ">Adicionar transação</button>
+                </div>
+            </form>
+            <hr class="linha">
+        </div>
+    </div>
+
+    <div>
+        <table class="tabela">
+
+            <tr>
+                <td colspan="3"><br><strong>
+                        <h3 class="text-center">Extrato de transações</h3>
+                    </strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-1">&nbsp;</td>
+                <td class="col-2"><strong>Mercadoria</strong></td>
+                <td class="text-right" class="col-3"><strong>Valor</strong></td>
+            </tr>
+            <tr>
+                <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
+            </tr>
+            <tr>
+                <td class="col-1">+</td>
+                <td class="col-2">Lorem ipsum dolor sit amet consectetur</td>
+                <td class="col-3">R$12.999,99</td>
+            </tr>
+            <tr>
+                <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
+            </tr>
+            <tr>
+                <td class="col-1">-</td>
+                <td class="col-2">Quis nostrud exercitation</td>
+                <td class="col-3">R$99.99</td>
+            </tr>
+            <tr>
+                <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
+            </tr>
+            <tr class="colunas">
+                <td>+</td>
+                <td class="col-2">Lorem ipsum</td>
+                <td class="col-3">R$9,99</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr class="linha-dupla">
+                </td>
+            </tr>
+            <tr>
+                <td class="col-1">&nbsp;</td>
+                <td class="col-2"><strong>Total</strong></td>
+                <td class="col-3"><strong>R$12.900</strong></td>
+            </tr>
+            <tr>
+                <td class="col-1">&nbsp;</td>
+                <td class="col-2">&nbsp;</td>
+                <td id="lucro">[LUCRO]</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
 
 </html>
