@@ -150,6 +150,14 @@ body {
 	font-size: 10px;
 }
 
+footer {
+	position:absolute;
+   	bottom:0;
+  	width:100%;
+   	height:10px;
+	background: #333;
+}
+
 .mt-1 {
 	margin-top: 10px;
 }
@@ -232,8 +240,17 @@ body {
 		margin: 5%;
 	}
 
+	.form-title {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	.form-tab {
 		display: flex;
+	}
+
+	.caixa-form {
+		margin: 1%;
 	}
 
 	.caixa-form1 {
@@ -257,7 +274,7 @@ body {
 		margin: 20px 0 0 0;
 		width: 30%;
 		height: 30px;
-		position:sticky;
+		position: sticky;
 		left: 70%;
 	}
 
@@ -286,6 +303,11 @@ body {
 		display: block;
 	}
 
+	.close {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
 	#x-menu {
 		text-align: left;
 		display: block;
@@ -295,6 +317,7 @@ body {
 		background-color: #c4c4c4;
 		color: #333;
 		display: block;
+		margin: 2%;
 	}
 
 	.menu-hamburguer {
@@ -318,7 +341,6 @@ body {
 	.container {
 		margin: 6.5%;
 	}
-
 
 
 	.linha {
@@ -382,6 +404,7 @@ body {
 		width: 90%;
 		margin: 5%;
 	}
+
 	.form-tab {
 		display: block;
 	}
@@ -424,6 +447,7 @@ body {
 		background-color: #c4c4c4;
 		color: #333;
 		display: block;
+		height: 5%;
 	}
 
 	.menu-hamburguer {
@@ -455,6 +479,7 @@ body {
 		margin: 20px 0 0 0;
 		width: 100%;
 		height: 30px;
+		position: static;
 	}
 
 	.linha {
