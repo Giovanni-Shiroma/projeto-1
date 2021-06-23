@@ -40,6 +40,10 @@ body {
 	margin-top: 1%;
 }
 
+.title-form-responsive {
+	display: none;
+}
+
 .titulo-box {
 	display: none;
 }
@@ -151,10 +155,10 @@ body {
 }
 
 footer {
-	position:absolute;
-   	bottom:0;
-  	width:100%;
-   	height:10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10px;
 	background: #333;
 }
 
@@ -245,8 +249,33 @@ footer {
 		justify-content: space-between;
 	}
 
+	.tfr-1 {
+		width: 28%;
+		margin: 28px 0 0 0;
+	}
+
+	.tfr-2 {
+		width: 47%;
+		margin: 28px 0 0 0;
+	}
+
+	.tfr-3 {
+		margin: 28px 0 0 0;
+	}
+
+	.title-form-responsive {
+		display: flex;
+		flex-direction: inherit;
+		position: static;
+		/* justify-content: space-around; */
+	}
+
 	.form-tab {
 		display: flex;
+	}
+
+	.form-tab p {
+		display: none;
 	}
 
 	.caixa-form {
@@ -317,7 +346,6 @@ footer {
 		background-color: #c4c4c4;
 		color: #333;
 		display: block;
-		margin: 2%;
 	}
 
 	.menu-hamburguer {
@@ -405,12 +433,20 @@ footer {
 		margin: 5%;
 	}
 
+	.title-form-responsive {
+		display: none;
+	}
+
 	.form-tab {
 		display: block;
 	}
 
 	.titulo-box {
 		display: none;
+	}
+
+	.form-tab p {
+		display: flex;
 	}
 
 	.menu-responsivo ul {
