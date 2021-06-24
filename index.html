@@ -46,7 +46,8 @@
     <div class="formulário">
         <div class="container border">
             <form>
-                <h1 class="titulo-box">Nova transação</h1>
+                <!-- <h1 class="titulo-box">Nova transação</h1> -->
+                <h3 class="text-center">Nova transação</h3>
                 <div class="form-title">
                 </div>
                 <div class="title-form-responsive">
@@ -55,9 +56,12 @@
                     <p class="tfr-3">valor</p>
                 </div>
                 <div class="form-tab">
-
                     <p label>Tipo de transação</p>
-                    <input class="caixa-form caixa-form1" placeholder="Compra" type="text" required>
+                    <select class="caixa-form" name="Tipos">
+                        <option value="Compra">Compras</option>
+                        <option value="Vendas"> Vendas</option>
+                    </select>
+                    <!-- <input class="caixa-form caixa-form1" placeholder="Compra" type="text" required> -->
 
                     <p label>Nome da mercadoria</p>
                     <input class="caixa-form caixa-form2" placeholder="Input" type="text" required>
@@ -69,8 +73,8 @@
                 <div class="mb-1">
                     <button class="botão ">Adicionar transação</button>
                 </div>
+                <hr class="linha">
             </form>
-            <hr class="linha">
         </div>
     </div>
 
