@@ -62,7 +62,7 @@ body {
 	list-style-type: none;
 	flex-direction: row;
 	position: fixed;
-	width: 350px;
+	/* width: 350px; */
 	height: 40px;
 	background-color: white;
 	color: #333;
@@ -73,7 +73,7 @@ body {
 .menu-responsivo ul li {
 	align-items: center;
 	margin: 7px 0;
-	padding: 0 20px;
+	padding: 0px 20px 0px 10px;
 	border-left: 1px solid #333;
 	font-style: normal;
 	font-weight: 600;
@@ -94,6 +94,11 @@ body {
 	display: none;
 }
 
+.itens-menu a {
+	text-decoration: none;
+	color: #333;
+}
+
 .caixa-form {
 	border: 1px solid #979797;
 	box-sizing: border-box;
@@ -102,6 +107,7 @@ body {
 	height: 42px;
 	padding-left: 1%;
 	font-size: 14px;
+	padding: 2%;
 }
 
 .tipos {
@@ -116,6 +122,7 @@ body {
 
 .container {
 	margin: 2%;
+	border-radius: 2%;
 }
 
 .botão {
@@ -124,12 +131,12 @@ body {
 	border-radius: 4px;
 	background-color: #333;
 	color: #ffffff;
-	margin: 2% 0 0 0;
+	margin: 8% 0% 0 0;
 	font-style: normal;
 	border-radius: 4px;
 }
 
-.border {
+.borda-form {
 	border-width: 100%;
 	border: 1px solid #979797;
 	padding: 3%;
@@ -258,11 +265,6 @@ footer {
 		margin: 5%;
 	}
 
-	.form-title {
-		display: flex;
-		justify-content: space-between;
-	}
-
 	.tfr-1 {
 		width: 28%;
 		margin: 28px 0 0 0;
@@ -282,6 +284,11 @@ footer {
 		flex-direction: inherit;
 		position: static;
 		/* justify-content: space-around; */
+	}
+
+	.itens-menu a {
+		margin-bottom: 10%;
+		color: #ffffff;
 	}
 
 	.form-tab {
@@ -391,8 +398,8 @@ footer {
 		display: contents;
 	}
 
-	.border {
-		width: 95%;
+	.borda-form {
+		width: 96%;
 		margin: auto;
 	}
 
@@ -468,6 +475,7 @@ footer {
 
 	.form-tab p {
 		display: flex;
+		margin-bottom: 2%;
 	}
 
 	.menu-responsivo ul {
@@ -499,6 +507,12 @@ footer {
 		text-align: left;
 		display: block;
 	}
+	
+	.itens-menu a {
+		margin-bottom: 10%;
+		color: #ffffff;
+	}
+
 
 	.itens-menu:hover {
 		background-color: #c4c4c4;
@@ -506,6 +520,7 @@ footer {
 		display: block;
 		height: 5%;
 	}
+
 
 	.menu-hamburguer {
 		display: block;
@@ -533,7 +548,7 @@ footer {
 	}
 
 	.botão {
-		margin: 20px 0 0 0;
+		margin: 6% 0 0 0;
 		width: 100%;
 		height: 30px;
 		position: static;
@@ -542,10 +557,10 @@ footer {
 	.linha {
 		width: 100%;
 		display: block;
-		margin-top: 20%;
+		margin-top: 8%;
 	}
 
-	.border {
+	.borda-form {
 		display: contents;
 	}
 
