@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
+    <script type="text/javascript" src="./script.js"></script>
+
 
 </head>
 
@@ -40,10 +42,10 @@
                     <a href="#">Cadastro de transações</a>
                 </li>
                 <li class="itens-menu mb-2">
-                    <a href="#">Limpar dados</a>
+                    <a href="#" onclick="limpar()" id="limpar">Limpar dados</a>
                 </li>
                 <li class="itens-menu mb-2">
-                    <a href="#">Salvar no servidor</a>
+                    <a href="#" id="salvar">Salvar no servidor</a>
                 </li>
             </ul>
 
@@ -53,8 +55,7 @@
 
     <div class="formulário">
         <div class="container borda-form">
-            <form>
-                <!-- <h1 class="titulo-box">Nova transação</h1> -->
+            <form id="formulario" name="formulario">
                 <div class="text-center">
                     <h3>Nova transação</h3>
                 </div>
@@ -65,21 +66,22 @@
                 </div>
                 <div class="form-tab">
                     <p label>Tipo de transação</p>
-                    <select class="caixa-form" name="Tipos">
+                    <select class="caixa-form" id="tipos" name="Tipos">
                         <option value="Compra">Compras</option>
                         <option value="Vendas"> Vendas</option>
                     </select>
-                    <!-- <input class="caixa-form caixa-form1" placeholder="Compra" type="text" required> -->
 
                     <p label>Nome da mercadoria</p>
-                    <input class="caixa-form caixa-form2" placeholder="Input" type="text" required>
+                    <input class="caixa-form caixa-form2" placeholder="Input" name="mercadoria" id="mercadoria" required>
+                    <spam id="erro-nome" class="aviso"></spam>
 
                     <p label>valor</p>
-                    <input class="caixa-form caixa-form3" placeholder="R$ 0,00" type="number" required>
+                    <input class="caixa-form caixa-form3" onkeyup="mascara()" placeholder="R$ 0,00" name="valor" id="valor" required>
+                    <spam id="erro-valor" class="aviso"></spam>
 
                 </div>
                 <div class="mb-1">
-                    <button class="botão ">Adicionar transação</button>
+                    <button class="botão" onclick="validar()">Adicionar transação</button>
                 </div>
                 <hr class="linha">
             </form>

@@ -1,4 +1,5 @@
 /* versão desk */
+
 body {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
@@ -119,7 +120,6 @@ body {
 	padding: 3%;
 }
 
-
 .container {
 	margin: 2%;
 	border-radius: 2%;
@@ -182,6 +182,10 @@ footer {
 	background: #333;
 }
 
+.aviso {
+	color: red;
+}
+
 .mt-1 {
 	margin-top: 10px;
 }
@@ -231,20 +235,18 @@ footer {
 }
 
 /* versão tablet */
-@media screen and (max-width:768px) {
 
+@media screen and (max-width:950px) {
 	.menu-responsivo {
 		position: absolute;
 		right: 4%;
 	}
-
 	.logo {
 		width: 30px;
 		height: 27.63px;
 		margin-top: 1%;
 		left: 5%;
 	}
-
 	.header-top ul {
 		background-color: #e0e0e0;
 		height: 60px;
@@ -253,74 +255,53 @@ footer {
 		justify-content: space-around;
 		align-items: center;
 	}
-
 	.title {
 		position: sticky;
 		left: 40%;
 	}
-
 	.formulário {
 		position: static;
 		width: 90%;
 		margin: 5%;
 	}
-
 	.tfr-1 {
 		width: 28%;
 		margin: 28px 0 0 0;
 	}
-
 	.tfr-2 {
 		width: 47%;
 		margin: 28px 0 0 0;
 	}
-
 	.tfr-3 {
 		margin: 28px 0 0 0;
 	}
-
 	.title-form-responsive {
 		display: flex;
 		flex-direction: inherit;
 		position: static;
-		/* justify-content: space-around; */
 	}
-
 	.itens-menu a {
 		margin-bottom: 10%;
 		color: #ffffff;
 	}
-
 	.form-tab {
 		display: flex;
 	}
-
 	.form-tab p {
 		display: none;
 	}
-
 	.caixa-form {
 		margin: 1%;
 	}
-
 	.caixa-form1 {
 		width: 100%;
 	}
-
 	.caixa-form2 {
 		width: 200%;
 	}
-
 	.caixa-form3 {
 		width: 100%;
 	}
-
-	/* .titulo-box {
-		text-align: center;
-		display: block;
-		font-size: 18px;
-	} */
-
 	.botão {
 		margin: 20px 0 0 0;
 		width: 30%;
@@ -328,7 +309,6 @@ footer {
 		left: 70%;
 		position: sticky;
 	}
-
 	.menu-responsivo ul {
 		display: none;
 		list-style-type: none;
@@ -343,7 +323,6 @@ footer {
 		margin: 0px;
 		padding: 20px 0px;
 	}
-
 	.menu-responsivo ul li {
 		border-left: 1px solid #333;
 		font-style: normal;
@@ -354,29 +333,24 @@ footer {
 		display: block;
 		text-align: end;
 	}
-
 	.close {
 		color: #ffffff;
 		text-decoration: none;
 	}
-
 	#x-menu {
 		text-align: left;
 		display: block;
 	}
-
 	.itens-menu:hover {
 		background-color: #c4c4c4;
 		color: #333;
 		display: block;
 	}
-
 	.menu-hamburguer {
 		display: block;
 		width: 100%;
 		position: relative;
 	}
-
 	.menu-hamburguer div {
 		width: 18PX;
 		height: 2px;
@@ -384,25 +358,19 @@ footer {
 		margin: 6px 0;
 		display: block;
 	}
-
 	.menu-responsivo:hover ul {
 		display: block;
 	}
-
 	.container {
 		margin: 6.5%;
 	}
-
-
 	.linha {
 		display: contents;
 	}
-
 	.borda-form {
 		width: 96%;
 		margin: auto;
 	}
-
 	.tabela {
 		margin: -30px 0;
 		padding: 0 20px;
@@ -412,35 +380,30 @@ footer {
 		display: flex;
 		width: 100%;
 	}
-
 	.col-3 {
 		text-align: right;
 	}
-
 	.col-1 {
 		width: 5%;
 	}
 }
 
 /* versão mobile */
-@media screen and (max-width:411px) {
 
+@media screen and (max-width:411px) {
 	.header-top {
 		justify-content: space-around;
 	}
-
 	.menu-responsivo {
 		position: static;
 		text-align: right;
 	}
-
 	.logo {
 		width: 30px;
 		height: 27.63px;
 		margin-top: 1%;
 		left: 5%;
 	}
-
 	.header-top ul {
 		background-color: #e0e0e0;
 		height: 60px;
@@ -449,35 +412,28 @@ footer {
 		justify-content: space-around;
 		align-items: center;
 	}
-
 	.title {
 		position: sticky;
 		left: 30%;
 	}
-
 	.formulário {
 		position: static;
 		width: 90%;
 		margin: 5%;
 	}
-
 	.title-form-responsive {
 		display: none;
 	}
-
 	.form-tab {
 		display: block;
 	}
-
 	.formulário form h3 {
 		display: none;
 	}
-
 	.form-tab p {
 		display: flex;
 		margin-bottom: 2%;
 	}
-
 	.menu-responsivo ul {
 		display: none;
 		list-style-type: none;
@@ -492,7 +448,6 @@ footer {
 		margin: 0px;
 		padding: 20px 0px;
 	}
-
 	.menu-responsivo ul li {
 		border-left: 1px solid #333;
 		font-style: normal;
@@ -502,31 +457,24 @@ footer {
 		align-items: center;
 		display: block;
 	}
-
 	#x-menu {
 		text-align: left;
 		display: block;
 	}
-	
 	.itens-menu a {
 		margin-bottom: 10%;
 		color: #ffffff;
 	}
-
-
 	.itens-menu:hover {
 		background-color: #c4c4c4;
 		color: #333;
 		display: block;
 		height: 5%;
 	}
-
-
 	.menu-hamburguer {
 		display: block;
 		width: 100%;
 	}
-
 	.menu-hamburguer div {
 		width: 18PX;
 		height: 2px;
@@ -534,36 +482,29 @@ footer {
 		margin: 6px 0;
 		display: block;
 	}
-
 	.menu-responsivo:hover ul {
 		display: block;
 	}
-
 	.container {
 		margin: 6.5%;
 	}
-
 	.caixa-form {
 		width: 100%;
 	}
-
 	.botão {
 		margin: 6% 0 0 0;
 		width: 100%;
 		height: 30px;
 		position: static;
 	}
-
 	.linha {
 		width: 100%;
 		display: block;
 		margin-top: 8%;
 	}
-
 	.borda-form {
 		display: contents;
 	}
-
 	.tabela {
 		margin: -30px 0;
 		padding: 15px 20px;
@@ -573,11 +514,9 @@ footer {
 		display: flex;
 		width: 100%;
 	}
-
 	.col-3 {
 		text-align: right;
 	}
-
 	.col-1 {
 		width: 5%;
 	}
