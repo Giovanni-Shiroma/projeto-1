@@ -28,7 +28,7 @@ function validaçao() {
         document.getElementById("mercadoria").focus();
         document.getElementById("erro-nome").innerHTML = "Nome não informado";
         return false;
-        
+
     } else if (valor == "") {
         document.getElementById("valor").focus();
         document.getElementById("erro-nome").innerHTML = "";
@@ -48,16 +48,16 @@ function validar() {
         var opcao = tipos.options[selecao.selectedIndex].value;
         var mercadoria = document.getElementById("mercadoria").value;
         var valor = document.getElementById("valor").value;
-        
+
         if (opcao == "compra") {
             valor = valor.replace(".", "");
             valor = valor.replace(",", ".");
             resultado = resultado - parseFloat(valor);
             document.getElementById("mercadoria").value = "";
             document.getElementById("valor").value = "";
-            
+
         } else {
-            
+
             valor = valor.replace(".", "");
             valor = valor.replace(",", ".");
             document.getElementById("mercadoria").value = "";
@@ -65,6 +65,7 @@ function validar() {
         }
     }
 }
+
 function mascara() {
     var val = document.getElementById("valor");
     var res = val.value;
@@ -84,3 +85,5 @@ function limpar() {
         window.location.reload();
     }
 }
+
+localStorage.getItem 

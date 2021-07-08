@@ -69,6 +69,7 @@ body {
 	color: #333;
 	top: -0.5%;
 	right: 11%;
+	padding: 0;
 }
 
 .menu-responsivo ul li {
@@ -414,7 +415,7 @@ footer {
 	}
 	.title {
 		position: sticky;
-		left: 30%;
+		left: 25%;
 	}
 	.formulário {
 		position: static;
