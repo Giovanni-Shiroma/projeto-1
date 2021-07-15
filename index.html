@@ -19,23 +19,25 @@
 <body>
 
     <div class="header-top">
+        <!-- LOGO -->
         <div>
             <img class="logo" src="./logo.png">
         </div>
+        <!-- TITULO -->
         <div class="title">
             <span>
                 Controle financeiro
             </span>
         </div>
-
-        <!-- Menu hamburguer para versão mob -->
+        <!-- MENUS -->
         <div class="menu-responsivo">
+            <!-- MENU HAMBURGUER -->
             <div class="menu-hamburguer">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-
+            <!-- MENU PARA VERSAO MOB -->
             <ul>
                 <li id="x-menu"><a href="" class="close">X</a></li>
                 <li class="itens-menu mb-2">
@@ -50,11 +52,11 @@
             </ul>
 
         </div>
-
     </div>
 
     <div class="formulário">
         <div class="container borda-form">
+            <!-- FORMULARIO -->
             <form id="formulario" name="formulario">
                 <div class="text-center">
                     <h3>Nova transação</h3>
@@ -65,25 +67,30 @@
                     <p class="tfr-3">valor</p>
                 </div>
                 <div class="form-tab">
+                    <!-- TIPOS -->
                     <p label>Tipo de transação</p>
-                    <select class="caixa-form" id="tipos" name="Tipos">
-                        <option value="Compra">Compras</option>
-                        <option value="Vendas"> Vendas</option>
+                    <select class="caixa-form" id="tipos" name="tipos">
+                        <option value="">PREENCHA UM TIPO</option>
+                        <option value="compras">Compras</option>
+                        <option value="vendas"> Vendas</option>
                     </select>
 
                     <p label>Nome da mercadoria</p>
                     <input class="caixa-form caixa-form2" placeholder="Mercadoria" name="mercadoria" id="mercadoria"
                         required>
+                    <!--ERRO-->
                     <spam id="erro-nome" class="aviso"></spam>
 
-                    <p label>valor</p>
+                    <p label>Valor</p>
                     <input class="caixa-form caixa-form3" onkeyup="mascara()" placeholder="R$ 0,00" name="valor"
                         id="valor" required>
+                    <!--ERRO-->
                     <spam id="erro-valor" class="aviso"></spam>
 
                 </div>
+                <!-- VALIDAR -->
                 <div class="mb-1">
-                    <button class="botão" onclick="validar()">Adicionar transação</button>
+                    <button class="botão" onclick="validar() , listaDados()" >Adicionar transação</button>
                 </div>
                 <hr class="linha">
             </form>
@@ -91,7 +98,8 @@
     </div>
 
     <div>
-        <table class="tabela">
+        <!-- TABELA -->
+        <table class="tabela" name="transacao" >
 
             <tr>
                 <td colspan="3"><br><strong>
@@ -107,27 +115,27 @@
             <tr>
                 <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td class="col-1">+</td>
                 <td class="col-2">Lorem ipsum dolor sit amet consectetur</td>
                 <td class="col-3">R$12.999,99</td>
             </tr>
             <tr>
                 <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
+            </tr> -->
+            <tr id="lista">
+                <!-- <td class="col-1"></td>
+                <td class="col-2"></td>
+                <td class="col-3"></td> -->
             </tr>
-            <tr>
-                <td class="col-1">-</td>
-                <td class="col-2">Quis nostrud exercitation</td>
-                <td class="col-3">R$99.99</td>
-            </tr>
-            <tr>
+            <!-- <tr>
                 <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
             </tr>
             <tr class="colunas">
                 <td>+</td>
                 <td class="col-2">Lorem ipsum</td>
                 <td class="col-3">R$9,99</td>
-            </tr>
+            </tr> -->
             <tr>
                 <td colspan="3">
                     <hr class="linha-dupla">
@@ -145,7 +153,6 @@
             </tr>
 
         </table>
-
     </div>
     <footer>
     </footer>
