@@ -126,6 +126,88 @@ body {
 	border-radius: 2%;
 }
 
+/*  */
+.tabela {
+    width: 65%;
+    margin-left: 28%;
+    display: block;
+}
+
+.tabela_h1 {
+	font-size: 18px;
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 19px;
+}
+
+.valorex {
+	margin-right: 10px;
+	color: #000000;
+	font-size: 14px;
+	text-align: right;
+	width: 200px;
+}
+
+.tabela h2 {
+	font-size: 14px;
+	margin: 3px 0;
+	margin-left: 30px;
+	margin-right: 42px;
+}
+
+.plinha {
+	font-size: 14px;
+	color: #000000;
+	width: inherit;
+}
+
+.tabLinha {
+	border-bottom: 1px solid #979797;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.linhas {
+	border-bottom: 1px solid #979797;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7px 0;
+	width: 100%;
+}
+
+.ultimalinha {
+	border-top: 1px solid #979797;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 7px;
+	margin-top: 3px;
+	width: 100%;
+}
+
+.resultFinal {
+	font-size: 10px;
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.tabela span {
+	margin-right: 11px;
+	margin-left: 10px;
+}
+
+.resultado {
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+/*  */
+
 .botão {
 	width: 100%;
 	height: 32px;
@@ -147,16 +229,6 @@ body {
 	display: contents;
 }
 
-.tabela {
-	float: right;
-	margin: 2%;
-	width: 50%;
-	margin-right: 11%;
-}
-
-.col-3 {
-	text-align: right;
-}
 
 .linha-extrato {
 	width: 100%;
@@ -347,6 +419,16 @@ footer {
 		color: #333;
 		display: block;
 	}
+	.tabela {
+		width: 95%;
+		margin-left: 3%;
+		display: block;
+	}
+	.tabela h2{
+		margin-right: 20px;
+		margin-left: 20px;
+	
+	}
 	.menu-hamburguer {
 		display: block;
 		width: 100%;
@@ -372,22 +454,8 @@ footer {
 		width: 96%;
 		margin: auto;
 	}
-	.tabela {
-		margin: -30px 0;
-		padding: 0 20px;
-		font-style: normal;
-		font-size: 16px;
-		line-height: 19px;
-		display: flex;
-		width: 100%;
-	}
-	.col-3 {
-		text-align: right;
-	}
-	.col-1 {
-		width: 5%;
-		color: aquamarine;
-	}
+	
+
 }
 
 /* versão mobile */
@@ -459,6 +527,10 @@ footer {
 		align-items: center;
 		display: block;
 	}
+	.tabela {
+		width: 90%;
+		margin: 0 auto;
+	}
 	#x-menu {
 		text-align: left;
 		display: block;
@@ -507,19 +579,5 @@ footer {
 	.borda-form {
 		display: contents;
 	}
-	.tabela {
-		margin: -30px 0;
-		padding: 15px 20px;
-		font-style: normal;
-		font-size: 16px;
-		line-height: 19px;
-		display: flex;
-		width: 100%;
-	}
-	.col-3 {
-		text-align: right;
-	}
-	.col-1 {
-		width: 5%;
-	}
+	
 }

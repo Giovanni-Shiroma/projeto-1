@@ -47,7 +47,7 @@
                     <a href="#" onclick="limpar()" id="limpar">Limpar dados</a>
                 </li>
                 <li class="itens-menu mb-2">
-                    <a href="#" id="salvar">Salvar no servidor</a>
+                    <a href="#" id="salvar" onclick="salvar">Salvar no servidor</a>
                 </li>
             </ul>
 
@@ -70,7 +70,7 @@
                     <!-- TIPOS -->
                     <p label>Tipo de transação</p>
                     <select class="caixa-form" id="tipos" name="tipos">
-                        <option value="">PREENCHA UM TIPO</option>
+                        <option value="">Selecione </option>
                         <option value="compras">Compras</option>
                         <option value="vendas"> Vendas</option>
                     </select>
@@ -90,69 +90,36 @@
                 </div>
                 <!-- VALIDAR -->
                 <div class="mb-1">
-                    <button class="botão" onclick="validar() , listaDados()" >Adicionar transação</button>
+                    <button class="botão" onclick="validar()" >Adicionar transação</button>
                 </div>
                 <hr class="linha">
             </form>
         </div>
     </div>
 
-    <div>
-        <!-- TABELA -->
-        <table class="tabela" name="transacao" >
-
-            <tr>
-                <td colspan="3"><br><strong>
-                        <h3 class="text-center mb-2">Extrato de transações</h3>
-                    </strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-1">&nbsp;</td>
-                <td class="col-2"><strong>Mercadoria</strong></td>
-                <td class="text-center" class="col-3"><strong>Valor</strong></td>
-            </tr>
-            <tr>
-                <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
-            </tr>
-            <!-- <tr>
-                <td class="col-1">+</td>
-                <td class="col-2">Lorem ipsum dolor sit amet consectetur</td>
-                <td class="col-3">R$12.999,99</td>
-            </tr>
-            <tr>
-                <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
-            </tr> -->
-            <tr id="lista">
-                <!-- <td class="col-1"></td>
-                <td class="col-2"></td>
-                <td class="col-3"></td> -->
-            </tr>
-            <!-- <tr>
-                <td colspan="3"><img src="./linha.png" class="linha-extrato"></td>
-            </tr>
-            <tr class="colunas">
-                <td>+</td>
-                <td class="col-2">Lorem ipsum</td>
-                <td class="col-3">R$9,99</td>
-            </tr> -->
-            <tr>
-                <td colspan="3">
-                    <hr class="linha-dupla">
-                </td>
-            </tr>
-            <tr>
-                <td class="col-1">&nbsp;</td>
-                <td class="col-2"><strong>Total</strong></td>
-                <td class="col-3"><strong>R$12.900</strong></td>
-            </tr>
-            <tr>
-                <td class="col-1">&nbsp;</td>
-                <td class="col-2">&nbsp;</td>
-                <td id="lucro">[LUCRO]</td>
-            </tr>
-
-        </table>
+    <!-- TABELA -->
+    <div class="tabela">
+        <div class="tabela">
+            <h1 class="tabela_h1">Nenhuma transação cadastrada.</h1>
+    
+              <div class="tabLinha">
+                  <h2>Mercadoria</h2>
+                  <h2>Valor</h2>
+              </div>
+              <div class="extratolinhas" id="lista">
+              <div class="linhas" id="linhas">
+                <span></span><p class="plinha"></p>
+                   <p class="valorex" name="valorex" id="total"></p>
+               </div>
+              </div>
+              <div class="ultimalinha">
+                   <h2>Total</h2>
+                   <h3 class="resultado" id="resultado"></h3>
+               </div>
+              <h5 id="resultFinal" class="resultFinal"></h5>
+          </div>
+        </div>
+        
     </div>
     <footer>
     </footer>
